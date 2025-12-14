@@ -1,0 +1,66 @@
+
+/* =========================
+   ESTILO GENERAL
+   ========================= */
+.root {
+    -fx-background-color: #2D3447;
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+/* =========================
+   BARRA LATERAL
+   ========================= */
+.sidebar {
+    -fx-background-color: #151928;
+    -fx-padding: 20;
+}
+
+/* =========================
+   LOGO
+   ========================= */
+.logo-text {
+    -fx-text-fill: #fff123;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 30 0;
+}
+
+/* =========================
+   BOTONES DEL MENÚ
+   ========================= */
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #a2aebc;
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-padding: 10 15;
+}
+
+.menu-button:hover {
+    -fx-background-color: #21283a;
+    -fx-text-fill: #2196f3;
+    -fx-background-radius: 5px;
+}
+
+/* =========================
+   TARJETAS (CARDS)
+   ========================= */
+.card {
+    -fx-background-color: #434D66;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box,
+            rgba(0,0,0,0.3), 10, 0, 0, 5);
+    -fx-padding: 20;
+}
+
+.card-title {
+    -fx-text-fill: #b0b6c6;
+    -fx-font-size: 12px;
+}
+
+.card-value {
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}

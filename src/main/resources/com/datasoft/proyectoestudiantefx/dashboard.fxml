@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.datasoft.proyectoestudiantefx.DashboardController"
+            prefWidth="900"
+            prefHeight="600"
+            stylesheets="@dashboard.css">
+
+    <left>
+        <VBox spacing="10" prefWidth="220" styleClass="sidebar">
+            <Label text="ACADEMIA" styleClass="logo-text"/>
+            <Button text="Inicio" styleClass="menu-button"/>
+            <Button text="Estudiantes" styleClass="menu-button"/>
+            <Button text="Docentes" styleClass="menu-button"/>
+            <Button text="Reportes" styleClass="menu-button"/>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox spacing="30">
+            <padding>
+                <Insets top="40" right="40" bottom="40" left="40"/>
+            </padding>
+
+            <Label text="Bienvenido al Sistema Académico"
+                   textFill="WHITE"
+                   style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+            <HBox spacing="20">
+
+                <VBox alignment="CENTER" prefWidth="200" prefHeight="120" styleClass="card">
+                    <Label text="TOTAL ESTUDIANTES" styleClass="card-title"/>
+                    <Label text="1500" styleClass="card-value"/>
+                </VBox>
+
+                <VBox alignment="CENTER" prefWidth="200" prefHeight="120" styleClass="card">
+                    <Label text="DOCENTES" styleClass="card-title"/>
+                    <Label text="120" styleClass="card-value"/>
+                </VBox>
+
+                <VBox alignment="CENTER" prefWidth="200" prefHeight="120" styleClass="card">
+                    <Label text="CURSOS" styleClass="card-title"/>
+                    <Label text="45" styleClass="card-value"/>
+                </VBox>
+
+            </HBox>
+        </VBox>
+    </center>
+
+</BorderPane>
